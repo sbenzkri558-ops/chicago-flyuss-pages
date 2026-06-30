@@ -1,0 +1,490 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FlyUSS | United Airlines® Flight Booking — Chicago O'Hare (ORD)</title>
+
+<!-- Google Search Console verification -->
+<meta name="google-site-verification" content="CHICAGO_GOOGLE_VERIFICATION_CODE" />
+
+<meta name="description" content="Book, change or cancel United Airlines® flights by phone from Chicago O'Hare. US-based agents for ORD departures — same-day rebooking, travel credits, reissues. Call +1-866-203-7940." />
+<meta name="keywords" content="United Airlines Chicago, United Airlines O'Hare, United Airlines ORD flight, United Airlines booking Chicago, book United Airlines by phone ORD, United Airlines flight changes Chicago" />
+<meta name="robots" content="index,follow" />
+<meta property="og:title" content="FlyUSS | United Airlines® Flight Booking — Chicago O'Hare (ORD)" />
+<meta property="og:description" content="Independent phone-based assistance for United Airlines® flight bookings, changes and cancellations from Chicago O'Hare. Call +1-866-203-7940." />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta name="theme-color" content="#0e4b9b" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --blue:#0a3d91;
+  --dark:#0f172a;
+  --red:#c8102e;
+  --gray:#64748b;
+  --light:#f8fafc;
+  --primary-dark:#0b3c7c;
+  --ring:rgba(14,75,155,.28);
+  --accent:#c8102e;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',system-ui,Arial,Helvetica,sans-serif;color:var(--dark);line-height:1.6;background:#fff;padding-top:116px}
+a{color:var(--blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+.ticker{position:fixed;top:0;left:0;right:0;height:48px;line-height:48px;z-index:100;background:var(--blue);color:#fff;font-size:15px;overflow:hidden;border-bottom:1px solid rgba(255,255,255,.15)}
+.ticker-wrap{display:flex;overflow:hidden}
+.ticker-move{display:flex;gap:40px;animation:scroll 22s linear infinite;white-space:nowrap}
+.ticker-move span{display:inline-block;font-size:14px;font-weight:600}
+@keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.nav{background:#fff;padding:16px 0;border-bottom:1px solid #e5e7eb;position:fixed;top:48px;left:0;right:0;z-index:99;backdrop-filter:blur(10px)}
+.nav-wrap{display:flex;justify-content:space-between;align-items:center}
+.logo{display:flex;align-items:center;gap:10px;padding:8px 16px;background:#fff;border:2px solid var(--blue);border-radius:12px;box-shadow:0 4px 12px rgba(14,75,155,.15)}
+.logo-diamond{width:32px;height:32px;background:var(--blue);transform:rotate(45deg);display:flex;align-items:center;justify-content:center;position:relative}
+.logo-diamond::after{content:'✈️';position:absolute;transform:rotate(-45deg);font-size:16px}
+.logo-text{font-size:26px;font-weight:900;color:var(--blue);letter-spacing:-1px}
+.logo-text span{color:var(--red)}
+.menu{display:flex;gap:22px;align-items:center}
+.menu a{color:var(--dark);text-decoration:none;font-weight:600;transition:.2s}
+.menu a:hover{color:var(--blue)}
+.btn{display:inline-block;padding:12px 24px;background:var(--blue);color:#fff;border-radius:8px;text-decoration:none;font-weight:700;transition:.2s;border:none;cursor:pointer}
+.btn:hover{background:var(--primary-dark);transform:translateY(-2px);text-decoration:none;color:#fff}
+.btn-red{background:var(--red)}
+.btn-red:hover{background:#b91c1c}
+.btn-outline{background:transparent;border:3px solid #fff;color:#fff}
+.btn-outline:hover{background:rgba(255,255,255,.2);border-color:#fff;text-decoration:none;color:#fff}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;border-radius:8px;background:transparent;border:0}
+.hamburger span{display:block;width:26px;height:3px;background:#000;border-radius:2px;transition:transform .28s ease,opacity .2s ease}
+.hamburger.active span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hamburger.active span:nth-child(2){opacity:0}
+.hamburger.active span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.hero{position:relative;min-height:580px;display:flex;align-items:center;overflow:hidden;padding:60px 0}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(14,75,155,.88) 0%,rgba(14,75,155,.65) 50%,rgba(59,130,246,.5) 100%);z-index:1}
+.hero-content{position:relative;z-index:2;color:#fff}
+.hero h1{font-size:44px;margin-bottom:20px;font-weight:900;line-height:1.15;text-shadow:0 2px 20px rgba(0,0,0,.3)}
+.hero h1 .accent{color:#fbbf24}
+.hero p{font-size:20px;margin-bottom:28px;opacity:.95;max-width:700px;text-shadow:0 1px 10px rgba(0,0,0,.2)}
+.hero-subtitle{font-size:13px;margin-top:14px;opacity:.8}
+.flex{display:flex;gap:16px;flex-wrap:wrap}
+.promo-bar{background:var(--red);color:#fff;text-align:center;padding:12px 20px;font-weight:700;font-size:15px;letter-spacing:.01em}
+.sect{padding:72px 0}
+.sect-title{font-size:36px;text-align:center;margin-bottom:12px;font-weight:800}
+.sect-sub{text-align:center;color:var(--gray);font-size:18px;margin-bottom:40px}
+.bg-soft{background:var(--light)}
+.grid{display:grid;gap:24px}
+.grid-2{grid-template-columns:1fr 1fr}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+.grid-auto{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+@media(max-width:920px){.grid-2,.grid-3{grid-template-columns:1fr}}
+.card{background:#fff;padding:28px;border-radius:16px;box-shadow:0 4px 16px rgba(0,0,0,.07);transition:.3s;border:1px solid #e5e7eb}
+.card:hover{box-shadow:0 10px 28px rgba(0,0,0,.12);transform:translateY(-4px)}
+.card h3{font-size:20px;margin-bottom:10px;color:var(--blue)}
+.card p{color:var(--gray);line-height:1.7}
+.icon{width:52px;height:52px;background:linear-gradient(135deg,#3b82f6,#0e4b9b);border-radius:14px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;font-size:26px}
+.airport-card img{width:100%;border-radius:12px;object-fit:cover;height:200px;margin-bottom:16px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:20px;text-align:center;margin:40px 0}
+.stat{padding:24px 16px;background:#fff;border-radius:16px;box-shadow:0 4px 12px rgba(0,0,0,.06);border:1px solid #e5e7eb}
+.stat-num{font-size:38px;font-weight:900;color:var(--blue)}
+.stat-txt{color:var(--gray);font-size:14px;margin-top:6px}
+.pill{display:inline-block;padding:6px 14px;border-radius:999px;background:#eff6ff;border:1px solid #dbeafe;color:#1e40af;font-weight:600;font-size:12px;margin:4px}
+.long-copy{line-height:1.85;color:#1e293b}
+.long-copy p{margin-bottom:18px;font-size:16px}
+.long-copy h3{font-size:20px;font-weight:700;color:var(--blue);margin:28px 0 10px}
+.long-copy ul{margin:10px 0 18px 20px}
+.long-copy ul li{margin-bottom:8px;font-size:15px}
+.field{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}
+.field label{font-weight:600;font-size:14px}
+.input{padding:12px 14px;border:1px solid #e5e7eb;border-radius:10px;outline:none;font-size:15px;font-family:inherit}
+.input:focus{border-color:var(--blue);box-shadow:0 0 0 4px var(--ring)}
+.phone-pill{display:inline-block;background:var(--blue);color:#fff;font-weight:700;padding:10px 16px;border-radius:14px;margin-right:10px;text-decoration:none}
+.cta-sect{background:linear-gradient(135deg,#c8102e,#ef4444);color:#fff;padding:72px 0;text-align:center}
+.cta-sect h2{font-size:40px;margin-bottom:18px;font-weight:900}
+.cta-sect p{font-size:19px;margin-bottom:28px;opacity:.95}
+.disclosure{background:#fffbeb;border:1px solid #fcd34d;border-radius:14px;padding:28px;margin:48px 0}
+.disclosure h3{color:var(--dark);font-size:18px;margin-bottom:10px}
+.disclosure p{color:var(--gray);font-size:13px;line-height:1.9}
+.faq-item{border:1px solid #e5e7eb;border-radius:14px;overflow:hidden;margin-bottom:14px}
+.faq-q{padding:20px 24px;font-weight:700;cursor:pointer;background:#fff;display:flex;justify-content:space-between;align-items:center;font-size:16px;transition:.2s}
+.faq-q:hover{background:#f1f5f9}
+.faq-a{padding:0 24px;max-height:0;overflow:hidden;transition:max-height .35s ease,padding .3s ease;color:var(--gray);font-size:15px;line-height:1.7}
+.faq-a.open{max-height:500px;padding:16px 24px}
+.faq-arrow{transition:transform .3s}
+.faq-item.open .faq-arrow{transform:rotate(180deg)}
+.legal-section{background:#f1f5f9;border-radius:16px;padding:32px;margin-bottom:32px}
+.legal-section h3{font-size:20px;font-weight:700;margin-bottom:14px;color:var(--dark)}
+.legal-section p,.legal-section ul{color:#475569;font-size:14px;line-height:1.9;margin-bottom:12px}
+.legal-section ul{padding-left:20px}
+.legal-section ul li{margin-bottom:6px}
+footer{background:var(--dark);color:#cbd5e1;padding:56px 0}
+.footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:32px;margin-bottom:40px}
+.footer-section h4{color:#fff;margin-bottom:14px;font-size:15px;font-weight:700}
+.footer-section ul{list-style:none;padding:0}
+.footer-section ul li{margin-bottom:8px}
+footer a{color:#94a3b8;text-decoration:none;font-size:14px;transition:.2s}
+footer a:hover{color:#fff}
+.footer-bottom{text-align:center;padding-top:28px;border-top:1px solid #1e293b;font-size:12px;color:#475569}
+.fab{position:fixed;bottom:26px;right:26px;width:120px;height:120px;background:linear-gradient(135deg,var(--red),#ef4444);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:50px;box-shadow:0 10px 50px rgba(200,16,46,.65);cursor:pointer;z-index:9999;text-decoration:none;animation:pulse 2s infinite;border:5px solid rgba(255,255,255,.55)}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.1)}}
+@media(max-width:840px){
+  .menu{display:none}
+  .hamburger{display:flex;position:absolute;right:16px;top:50%;transform:translateY(-50%)}
+  .menu.show{display:flex;position:absolute;top:68px;left:0;right:0;background:#fff;padding:18px 20px;flex-direction:column;gap:14px;border-top:1px solid #e5e7eb;box-shadow:0 8px 24px rgba(2,6,23,.08)}
+  .hero{height:auto;min-height:0;padding:56px 0 44px}
+  .hero-bg img{height:100%;min-height:480px;object-fit:cover;object-position:50% 50%}
+  .hero h1{font-size:26px;line-height:1.2;margin-bottom:14px}
+  .hero p{font-size:15px;margin-bottom:20px}
+  .flex{flex-direction:column;gap:10px}
+  .flex .btn{width:100%;text-align:center;padding:14px 20px;font-size:16px;border-radius:10px;box-sizing:border-box}
+  .sect-title{font-size:26px}
+  .fab{width:100px;height:100px;font-size:44px;bottom:16px;right:16px;border-width:4px}
+  body{padding-top:116px}
+}
+@media(max-width:480px){
+  .hero h1{font-size:22px}
+  .hero p{font-size:14px}
+  .hero-subtitle{font-size:12px}
+}
+</style>
+</head>
+<body>
+
+<!-- Ticker -->
+<div class="ticker">
+  <div class="ticker-wrap">
+    <div class="ticker-move" aria-hidden="true">
+      <span>✈️ United Airlines® flight booking, changes & cancellations — by phone</span>
+      <span>📞 Call now: +1-866-203-7940</span>
+      <span>🕘 24/7 assistance — English & Spanish</span>
+      <span>💳 Rebooking, travel credits, schedule changes</span>
+      <span>🌆 Chicago O'Hare (ORD) specialists</span>
+      <span>⚡ Same-day changes available</span>
+      <span>✈️ United Airlines® flight booking, changes & cancellations — by phone</span>
+      <span>📞 Call now: +1-866-203-7940</span>
+      <span>🕘 24/7 assistance — English & Spanish</span>
+      <span>💳 Rebooking, travel credits, schedule changes</span>
+      <span>🌆 Chicago O'Hare (ORD) specialists</span>
+      <span>⚡ Same-day changes available</span>
+    </div>
+  </div>
+</div>
+
+<!-- Nav -->
+<nav class="nav">
+  <div class="wrap nav-wrap" style="position:relative">
+    <a href="#home" class="logo">
+      <div class="logo-diamond"></div>
+      <div class="logo-text">Fly<span>USS</span></div>
+    </a>
+    <button id="hamburger" class="hamburger" aria-label="Open menu" aria-expanded="false" type="button">
+      <span></span><span></span><span></span>
+    </button>
+    <div id="primary-menu" class="menu">
+      <a href="#services">Services</a>
+      <a href="#airports">O'Hare Terminals</a>
+      <a href="#why">Why Us</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+      <a href="tel:+18662037940" class="btn btn-red">📞 +1-866-203-7940</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section id="home" class="hero">
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1500644228166-71afd2a3f73e?w=1600&q=85" alt="Airplane on runway at a major US hub airport" width="1600" height="900" loading="eager" decoding="async" />
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="wrap hero-content">
+    <h1>Book, Change & Cancel <span class="accent">United Airlines® Flights</span> — Chicago O'Hare (ORD)</h1>
+    <p>US-based independent travel agents assisting passengers departing from Chicago O'Hare International Airport, United's largest domestic hub. Fast phone-first support for new bookings, same-day rebooking, cancellations and travel credits.</p>
+    <div class="flex">
+      <a class="btn btn-red" href="tel:+18662037940">📞 +1-866-203-7940</a>
+      <a class="btn btn-outline" href="#airports">See O'Hare Terminals</a>
+    </div>
+    <p class="hero-subtitle">We are not United Airlines. Independent third-party service. See legal disclosure below.</p>
+  </div>
+</section>
+
+<!-- Promo bar -->
+<div class="promo-bar">
+  📞 Chicago United Airlines® Support — O'Hare (ORD) — Call +1-866-203-7940 — 24/7 Assistance, Same-Day Rebooking & Travel Credits
+</div>
+
+<!-- Services -->
+<section id="services" class="sect">
+  <div class="wrap">
+    <h2 class="sect-title">How We Help O'Hare Travelers</h2>
+    <p class="sect-sub">Our Chicago-area agents provide round-the-clock phone support for United Airlines® passengers flying out of O'Hare.</p>
+    <div class="grid grid-auto">
+      <div class="card"><div class="icon">✈️</div><h3>New Reservations</h3><p>We help you compare fare classes, evaluate connection options through ORD, and lock in seating for both short domestic hops and long-haul international routes departing Chicago.</p></div>
+      <div class="card"><div class="icon">🔄</div><h3>Same-Day Confirmed Changes</h3><p>Plans shift fast at a hub the size of O'Hare. Our agents check standby lists, same-day confirmed availability, and fare differences so you can move to an earlier or later departure with confidence.</p></div>
+      <div class="card"><div class="icon">📅</div><h3>Schedule-Change Rebooking</h3><p>When United adjusts a published schedule, we walk through your revised itinerary, look for better connection windows through O'Hare, and reissue tickets within published policy.</p></div>
+      <div class="card"><div class="icon">❌</div><h3>Cancellations & Refund Review</h3><p>We review your fare conditions, explain what's refundable versus credit-eligible, and process the cancellation correctly so you're not left guessing about your money.</p></div>
+      <div class="card"><div class="icon">💳</div><h3>Travel Credits & Vouchers</h3><p>United issues electronic travel certificates for many non-refundable cancellations. Our agents apply them properly, including split-passenger and multi-leg credit scenarios.</p></div>
+      <div class="card"><div class="icon">⬆️</div><h3>Seating, Upgrades & Special Needs</h3><p>From Economy Plus seat selection to mobility assistance coordination at a large hub airport, we relay your requirements clearly so nothing is lost between booking and boarding.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Airports / Terminals -->
+<section id="airports" class="sect bg-soft">
+  <div class="wrap">
+    <h2 class="sect-title">United Airlines® at Chicago O'Hare (ORD)</h2>
+    <p class="sect-sub">O'Hare is United's single largest hub. Here's what travelers typically need help with, by terminal.</p>
+    <div class="grid grid-2">
+      <div class="card airport-card">
+        <img src="https://images.unsplash.com/photo-1495433324511-bf8e92934d90?w=800&q=85" alt="Domestic airport terminal concourse with departure gates" width="800" height="500" loading="lazy" decoding="async" style="object-position:center 50%" />
+        <h3>Terminal 1 — United's Domestic Hub</h3>
+        <p style="color:var(--gray);margin-bottom:14px">United's Terminal 1 at O'Hare handles the bulk of its domestic departures, connecting Chicago to dozens of cities across the country. With this much connecting traffic in one terminal, missed connections and tight rebooking windows are common — our agents specialize in finding the next workable routing fast.</p>
+        <span class="pill">Domestic connections</span>
+        <span class="pill">Tight-connection rebooking</span>
+        <span class="pill">Standby placement</span>
+        <p style="margin-top:16px"><a class="btn btn-red" href="tel:+18662037940">📞 Call Terminal 1 Desk — +1-866-203-7940</a></p>
+      </div>
+      <div class="card airport-card">
+        <img src="https://images.unsplash.com/photo-1569154941061-e231b4725ef1?w=800&q=85" alt="International airport terminal with wide-body aircraft" width="800" height="500" loading="lazy" decoding="async" style="object-position:center 50%" />
+        <h3>Terminal 5 — International Departures</h3>
+        <p style="color:var(--gray);margin-bottom:14px">United's long-haul international flights from O'Hare depart out of Terminal 5, serving destinations across Europe, Asia and Latin America. Our agents handle visa-document questions, international fare-rule reissues, and multi-carrier itinerary changes that touch a United segment.</p>
+        <span class="pill">International routing</span>
+        <span class="pill">Multi-carrier itineraries</span>
+        <span class="pill">Long-haul reissues</span>
+        <p style="margin-top:16px"><a class="btn btn-red" href="tel:+18662037940">📞 Call International Desk — +1-866-203-7940</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Long copy -->
+<section id="guide" class="sect">
+  <div class="wrap">
+    <div class="card" style="padding:40px">
+      <h2 style="font-size:28px;font-weight:800;color:var(--dark);margin-bottom:6px">United Airlines® Phone Booking — Chicago O'Hare Guide</h2>
+      <p style="color:var(--gray);margin-bottom:28px;font-size:15px">Phone-first support for United Airlines® travelers flying through O'Hare — booking, reissues, cancellations and travel credits.</p>
+      <div class="long-copy">
+        <p>O'Hare runs at a scale most airports never approach. On a given day it can handle well over two thousand departures and arrivals across multiple carriers, and United alone operates hundreds of those flights through its domestic and international terminals. At that volume, a single ground-stop, a late inbound aircraft, or a crew-timing issue can ripple through dozens of connections within minutes — and the self-service rebooking tools online don't always surface the fastest way back on track.</p>
+        <p>That's where a live phone agent earns their keep. We can look across the full United schedule out of Chicago — not just the next available seat the app shows you — and weigh options like a same-day confirmed change, a different connecting city, or a same-day standby request. When weather rolls through the Midwest, which it does often, having someone on the phone who already knows O'Hare's layout and United's rebooking hierarchy saves real time.</p>
+        <h3>Why Chicago Travelers Call Instead of Rebooking Online</h3>
+        <p>O'Hare's sheer size means United's self-service tools sometimes default to a connection that adds hours, when a same-day option exists but isn't surfaced automatically. Our agents check United's published fare rules, MileagePlus priority handling, and ORD-specific operational notes before recommending a path forward, then execute the change while you're still on the line.</p>
+        <h3>Booking New United Flights Out of O'Hare</h3>
+        <p>If you're planning ahead rather than reacting to a disruption, phone booking still has an edge for complex trips — multi-city itineraries, group travel, or routings that mix domestic and international segments through Chicago. We can check fare buckets across cabins and confirm seat assignments before you commit.</p>
+        <h3>Handling Weather and Operational Delays at O'Hare</h3>
+        <p>Chicago's winters and summer storm lines are notorious for triggering ground stops and rolling delays across the Midwest. When United issues an operational waiver during these events, our agents apply it correctly to your itinerary and look for the earliest realistic alternative, rather than leaving you stuck on hold with the carrier.</p>
+        <h3>Travel Credits, Vouchers and Refund Questions</h3>
+        <ul>
+          <li>Refund eligibility review for refundable fares and qualifying cancellations</li>
+          <li>Electronic travel certificate issuance under United's non-refundable fare rules</li>
+          <li>Correct partial-use handling when a credit covers only part of a new itinerary</li>
+          <li>Compensation and credit guidance for significant schedule changes</li>
+          <li>Multi-passenger credit splits and transfers where policy allows</li>
+        </ul>
+        <h3>Call Us 24/7 — Chicago United Airlines® Support</h3>
+        <p>Our team takes calls around the clock, including overnight and on holidays — useful given how often O'Hare disruptions happen outside normal business hours. Call <strong>+1-866-203-7940</strong> to reach a Chicago-focused United Airlines® booking specialist.</p>
+      </div>
+      <div style="margin-top:28px">
+        <a class="btn btn-red" href="tel:+18662037940">📞 Call for United Airlines® Help — +1-866-203-7940</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why choose us -->
+<section id="why" class="sect bg-soft">
+  <div class="wrap">
+    <h2 class="sect-title">Why Choose FlyUSS?</h2>
+    <p class="sect-sub">Independent phone assistance trusted by thousands of Chicago-area travelers</p>
+    <div class="stats">
+      <div class="stat"><div class="stat-num">24/7</div><div class="stat-txt">Always Available</div></div>
+      <div class="stat"><div class="stat-num">50K+</div><div class="stat-txt">Happy Customers</div></div>
+      <div class="stat"><div class="stat-num">98%</div><div class="stat-txt">Satisfaction Rate</div></div>
+      <div class="stat"><div class="stat-num">&lt;2min</div><div class="stat-txt">Avg Response Time</div></div>
+    </div>
+    <div class="grid grid-auto" style="margin-top:12px">
+      <div class="card"><div class="icon">🎯</div><h3>O'Hare Specialists</h3><p>US-based agents who know United's O'Hare hub operations, terminal layout, and rebooking hierarchy — not a generic call-center script.</p></div>
+      <div class="card"><div class="icon">⚡</div><h3>Fast Resolution</h3><p>When weather or a tight connection threatens your itinerary, speed matters. We move quickly to lock in the next workable option.</p></div>
+      <div class="card"><div class="icon">💰</div><h3>Clear, Upfront Pricing</h3><p>We explain any service fee before you agree to anything, and help you get full value from credits, vouchers and miles.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="sect">
+  <div class="wrap">
+    <div class="grid grid-2" style="align-items:start">
+      <div>
+        <h2 style="font-size:34px;font-weight:800;margin-bottom:14px">Contact FlyUSS — Chicago O'Hare</h2>
+        <p style="color:var(--gray);font-size:17px;line-height:1.7;margin-bottom:18px">Need help right now? Our Chicago-focused phone agents are available around the clock for United Airlines® bookings, same-day changes, cancellations and travel credits.</p>
+        <a class="phone-pill" href="tel:+18662037940">📞 +1-866-203-7940</a>
+        <p style="color:var(--gray);font-size:13px;margin-top:10px">Hours: 24/7 | English & Spanish | Calls may be recorded for quality</p>
+      </div>
+      <div class="card">
+        <h3 style="margin-bottom:18px">Request a Callback</h3>
+        <form onsubmit="event.preventDefault();document.getElementById('cb-msg').textContent='Thank you — an agent will contact you shortly.';this.reset()">
+          <div class="field"><label for="from">From (City or Airport Code)</label><input id="from" class="input" type="text" placeholder="e.g., ORD or Chicago" required /></div>
+          <div class="field"><label for="to">To (City or Airport Code)</label><input id="to" class="input" type="text" placeholder="e.g., Denver or DEN" required /></div>
+          <div class="field"><label for="travel-date">Travel Date</label><input id="travel-date" class="input" type="date" required /></div>
+          <div class="field"><label for="email">Email (optional)</label><input id="email" class="input" type="email" placeholder="you@example.com" /></div>
+          <button class="btn" type="submit" style="width:100%">✅ Request Call</button>
+          <p id="cb-msg" style="font-size:12px;margin-top:10px;color:var(--gray)">Submitting this form does not book a ticket or hold a fare.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="sect bg-soft">
+  <div class="wrap">
+    <h2 class="sect-title">Frequently Asked Questions</h2>
+    <p class="sect-sub">Everything you need to know about phone-based United Airlines® booking assistance from Chicago O'Hare</p>
+    <div style="max-width:860px;margin:0 auto">
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Are you affiliated with United Airlines? <span class="faq-arrow">▼</span></div><div class="faq-a">No. FlyUSS is an independent, third-party referral and marketing service. We are not affiliated with, endorsed by, or directly connected to United Airlines, Inc. United Airlines® is a registered trademark of United Airlines, Inc.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Can you change or cancel any United Airlines® ticket? <span class="faq-arrow">▼</span></div><div class="faq-a">It depends on the fare rules attached to your ticket and what's currently available. Our agents review your specific itinerary and explain any applicable fees before processing a change.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What should I have ready before calling? <span class="faq-arrow">▼</span></div><div class="faq-a">Please have the passenger name(s), your confirmation number, your desired new dates or destination, and a payment method ready if you're booking new travel.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Do you charge a service fee? <span class="faq-arrow">▼</span></div><div class="faq-a">Any applicable service fee is disclosed clearly before your transaction is processed. Nothing is charged without your explicit agreement.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">How do United travel credits work? <span class="faq-arrow">▼</span></div><div class="faq-a">United typically issues an electronic travel certificate when a non-refundable ticket is cancelled. Our agents handle correct application of these certificates, including partial-use and multi-passenger scenarios.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Which O'Hare terminals do you cover? <span class="faq-arrow">▼</span></div><div class="faq-a">We assist United Airlines® passengers departing from both Terminal 1 (domestic) and Terminal 5 (international) at Chicago O'Hare.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Privacy Policy -->
+<section id="privacy" class="sect">
+  <div class="wrap" style="max-width:880px">
+    <h2 class="sect-title" style="text-align:left">Privacy Policy</h2>
+    <div class="legal-section"><h3>Information We Collect</h3><p>When you contact FlyUSS by phone or through our website callback form, we may collect your name, email address, travel dates, airport codes, and any other details you voluntarily provide. We do not collect payment card numbers through our website.</p></div>
+    <div class="legal-section"><h3>How We Use Your Information</h3><p>The information you provide is used solely to respond to your inquiry and facilitate phone-based travel assistance. We do not sell, trade, or transfer your personal information to third parties for marketing purposes.</p><ul><li>To connect you with a qualified travel agent</li><li>To follow up on callback requests</li><li>To comply with applicable legal and regulatory requirements</li><li>To maintain internal quality and training records</li></ul></div>
+    <div class="legal-section"><h3>Call Recording</h3><p>Calls to and from FlyUSS may be recorded for quality assurance, training, and compliance purposes. By calling our number, you consent to this recording.</p></div>
+    <div class="legal-section"><h3>Cookies and Website Data</h3><p>Our website may use standard cookies and analytics tools to understand how visitors interact with our pages. This data is aggregated and anonymous.</p></div>
+    <div class="legal-section"><h3>Contact & Data Requests</h3><p>For any privacy-related inquiries, please call us at <a href="tel:+18662037940">+1-866-203-7940</a>.</p></div>
+  </div>
+</section>
+
+<!-- Legal Disclosure -->
+<section id="disclosure" class="sect bg-soft">
+  <div class="wrap">
+    <div class="disclosure">
+      <h3>⚖️ Legal Disclosure</h3>
+      <p><strong>FlyUSS</strong> is an independent travel service provider and is <strong>not</strong> affiliated with, endorsed by, or directly connected to any airline including United Airlines, American Airlines, or any other carrier. United Airlines® is a registered trademark of United Airlines, Inc. Prices, availability, and policies are subject to change without notice and are determined solely by the airlines. Service fees may apply and will be disclosed before any transaction is processed.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-sect" id="cta">
+  <div class="wrap">
+    <h2>Need Help Right Now?</h2>
+    <p>Our expert agents are standing by 24/7 to assist with any United Airlines® flight need from Chicago O'Hare</p>
+    <a href="tel:+18662037940" class="btn" style="background:#fff;color:var(--red);font-size:18px;padding:16px 36px;font-weight:900">📞 Call +1-866-203-7940</a>
+    <p style="margin-top:18px;font-size:14px;opacity:.85">Available 24/7 | English & Spanish | O'Hare Specialists</p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-section">
+        <div class="logo" style="border-color:#3b82f6;margin-bottom:16px;display:inline-flex">
+          <div class="logo-diamond"></div>
+          <div class="logo-text" style="color:#cbd5e1">Fly<span>USS</span></div>
+        </div>
+        <p style="font-size:14px;color:#94a3b8;margin-top:12px;line-height:1.7">Independent phone assistance for United Airlines® flight bookings, changes and cancellations from Chicago O'Hare (ORD).</p>
+      </div>
+      <div class="footer-section">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Flight Booking</a></li>
+          <li><a href="#services">Changes & Modifications</a></li>
+          <li><a href="#services">Cancellations</a></li>
+          <li><a href="#services">Travel Credits & Vouchers</a></li>
+          <li><a href="#services">Upgrades</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>O'Hare Terminals</h4>
+        <ul>
+          <li><a href="#airports">Terminal 1 — Domestic Hub</a></li>
+          <li><a href="#airports">Terminal 5 — International</a></li>
+        </ul>
+        <h4 style="margin-top:20px">Resources</h4>
+        <ul>
+          <li><a href="https://www.united.com" target="_blank" rel="noopener nofollow">united.com</a></li>
+          <li><a href="https://www.tsa.gov/travel" target="_blank" rel="noopener nofollow">TSA — Travel</a></li>
+          <li><a href="https://www.transportation.gov/airconsumer" target="_blank" rel="noopener nofollow">US DOT Air Consumer</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#why">About Us</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <h4 style="margin-top:20px">Legal</h4>
+        <ul>
+          <li><a href="#privacy">Privacy Policy</a></li>
+          <li><a href="#disclosure">Legal Disclosure</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p style="font-size:14px;margin-bottom:10px;color:#94a3b8">📞 <a href="tel:+18662037940">+1-866-203-7940</a></p>
+        <p style="font-size:14px;color:#94a3b8">🌐 chicago.flyuss.com</p>
+        <p style="font-size:13px;margin-top:10px;color:#64748b">Available 24/7<br>English & Spanish</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="yr"></span> FlyUSS. All rights reserved. | Independent travel service provider | Not affiliated with United Airlines, Inc.</p>
+    </div>
+  </div>
+</footer>
+
+<a href="tel:+18662037940" class="fab" aria-label="Call us now">📞</a>
+
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+(function(){
+  const hamburger = document.getElementById('hamburger');
+  const menu = document.getElementById('primary-menu');
+  const BREAK = 840;
+  function openM(){ menu.classList.add('show'); hamburger.classList.add('active'); hamburger.setAttribute('aria-expanded','true'); }
+  function closeM(){ menu.classList.remove('show'); hamburger.classList.remove('active'); hamburger.setAttribute('aria-expanded','false'); }
+  function toggle(){ menu.classList.contains('show') ? closeM() : openM(); }
+  if(hamburger){ hamburger.addEventListener('click', toggle); }
+  if(menu){ menu.addEventListener('click', function(e){ if(e.target.tagName==='A'&&window.innerWidth<=BREAK){ setTimeout(closeM,100); } }); }
+  window.addEventListener('resize', function(){ if(window.innerWidth>BREAK) closeM(); });
+  document.addEventListener('click', function(e){ if(window.innerWidth<=BREAK&&menu&&hamburger&&!menu.contains(e.target)&&!hamburger.contains(e.target)) closeM(); });
+})();
+function toggleFaq(el){
+  const item = el.closest('.faq-item');
+  const ans = item.querySelector('.faq-a');
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(function(i){ i.classList.remove('open'); i.querySelector('.faq-a').classList.remove('open'); });
+  if(!isOpen){ item.classList.add('open'); ans.classList.add('open'); }
+}
+</script>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"FlyUSS — Chicago O'Hare United Airlines Booking","url":"https://chicago.flyuss.com","telephone":"+1-866-203-7940","areaServed":"Chicago, IL","contactPoint":{"@type":"ContactPoint","telephone":"+1-866-203-7940","contactType":"customer service","areaServed":"US","availableLanguage":["English","Spanish"],"hoursAvailable":"Mo-Su 00:00-23:59"}}
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17666212411"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-17666212411');
+</script>
+
+</body>
+
+</html>
